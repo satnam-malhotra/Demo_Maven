@@ -4,10 +4,13 @@ orbs:
 executors:
   my-executor:
     docker: 
-      - image: 'selenium/standalone-chrome:3.1.0'
+      -image: 'selenium/standalone-chrome:3.1.0'
 workflows:
   maven_test:
     jobs:
-     - maven/test:
+     -maven/test:
    	   executor: my-executor
        test_results_path: /path/to/test/results
+       
+       
+       
