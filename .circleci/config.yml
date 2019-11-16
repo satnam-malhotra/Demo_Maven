@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     
-    working_directory: ~/circleci-demo-java-spring
+    working_directory: ~/circleci-demo-java
 
     docker:
       - image: selenium/standalone-chrome:3.1.0
@@ -14,13 +14,16 @@ jobs:
     steps:
 
       - checkout
+
+      - restore_cache:
+          key: circleci-demo-java-{{ checksum "pom.xml" }}
       
       - run: mvn dependency:go-offline
       
       - save_cache:
           paths:
             - ~/.m2
-          key: circleci-demo-java-spring-{{ checksum "pom.xml" }}
+          key: circleci-demo-java-{{ checksum "pom.xml" }}
       
       - run: mvn package
       
