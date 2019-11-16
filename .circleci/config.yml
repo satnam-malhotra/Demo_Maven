@@ -1,6 +1,11 @@
 version: 2
 jobs:
   build:
+  
+  	type: shell
+	command: |
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    dpkg -i google-chrome-stable_current_amd64.deb; apt-get -fy install
     
     working_directory: ~/circleci-demo-java-spring
 
@@ -9,11 +14,6 @@ jobs:
       env:
         - DISPLAY=:99
         - CHROME_BIN=/usr/bin/google-chrome
-
-		- type: shell
-		  name: Starting Xvfb (for Browser Tests)
-		  command: Xvfb :99 -screen 0 1280x1024x24
-		   background: true
    
     steps:
 
