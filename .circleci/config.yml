@@ -6,21 +6,21 @@ executors:
     docker: 
       - image: 'selenium/standalone-chrome:3.1.0'
 commands:
-	dependency:
-	    parameters:
-	      cache_key_prefix:
-	        default: maven
-	        description: Key prefix of cache
-	        type: string
-	      maven_path:
-	        default: ~/.m2
-	        description: maven path
-	        type: string
-	      pom_file:
-	        default: pom.xml
-	        description: pom file name
-	        type: string
-	steps:
-	  - run:
-	     command: |
-	          mvn test
+  dependency:
+   parameters:
+	cache_key_prefix:
+	default: maven
+	description: Key prefix of cache
+	type: string
+  maven_path:
+   default: ~/.m2
+   description: maven path
+   type: string
+   pom_file:
+   default: pom.xml
+   description: pom file name
+   type: string
+  steps:
+	- run:
+      command: |
+       mvn test
