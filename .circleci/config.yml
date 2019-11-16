@@ -12,15 +12,15 @@ commands:
 	default: maven
 	description: Key prefix of cache
 	type: string
-  maven_path:
-   default: ~/.m2
-   description: maven path
-   type: string
-   pom_file:
-   default: pom.xml
-   description: pom file name
-   type: string
-  steps:
+   maven_path:
+    default: ~/.m2
+    description: maven path
+    type: string
+    pom_file:
+    default: pom.xml
+    description: pom file name
+    type: string
+   steps:
 	- run:
        command: |
          mvn test
