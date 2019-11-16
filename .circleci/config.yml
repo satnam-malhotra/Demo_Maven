@@ -11,5 +11,4 @@ executors:
 workflows:
   maven_test:
     jobs:
-      - maven/test:
-          test_results_path: /path/to/test/results
+      - maven/test
