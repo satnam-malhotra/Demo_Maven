@@ -1,4 +1,8 @@
-version: 2
+version: 2.1
+
+orbs:
+  maven: circleci/maven@0.0.11
+
 jobs:
   build:
     
@@ -12,7 +16,5 @@ jobs:
     steps:
 
       - checkout
-      
-      - run: apt-get install maven
       
       - run: mvn test
