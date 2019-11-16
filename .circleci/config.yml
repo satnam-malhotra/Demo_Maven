@@ -18,14 +18,12 @@ jobs:
       - restore_cache:
           key: circleci-demo-java-spring-{{ checksum "pom.xml" }}
       
-      - run: mvn dependency:go-offline
-      
       - save_cache:
           paths:
             - ~/.m2
           key: circleci-demo-java-spring-{{ checksum "pom.xml" }}
       
-      - run: mvn package
+      - run: mvn test
       
       - store_test_results:
           path: target/surefire-reports
