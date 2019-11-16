@@ -5,11 +5,16 @@ jobs:
     working_directory: ~/circleci-demo-java-spring
 
     docker:
-      - image: circleci/openjdk:8-jdk-stretch-browsers
-        environment:
-          POSTGRES_USER: root
-          POSTGRES_DB: circle_test
+      - image: ubuntu:14.04
+      env:
+        - DISPLAY=:99
+        - CHROME_BIN=/usr/bin/google-chrome
 
+		- type: shell
+		  name: Starting Xvfb (for Browser Tests)
+		  command: Xvfb :99 -screen 0 1280x1024x24
+		   background: true
+   
     steps:
 
       - checkout
