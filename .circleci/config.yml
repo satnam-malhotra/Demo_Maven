@@ -1,16 +1,20 @@
 version: 2.1
-orbs:
-  maven: circleci/maven@0.0.11
-executors:
-  my-executor:
+
+executors: 
+  my-executor: 
     docker: 
-      -image: 'selenium/standalone-chrome:3.1.0'
-workflows:
-  maven_test:
-    jobs:
-     -maven/test:
-   	   executor: my-executor
-       test_results_path: /path/to/test/results
-       
+      - 
+        image: "selenium/standalone-chrome:3.1.0"
+orbs: 
+  maven: circleci/maven@0.0.11
+version: 2.1
+workflows: 
+  maven_test: 
+    jobs: 
+      ? "-maven/test"
+      : 
+        executor: my-executor
+        test_results_path: /path/to/test/results
+
        
        
