@@ -13,6 +13,6 @@ jobs:
 
       - checkout
       
-      - rum: apt-get install maven
+      - run: apt-get install maven
       
       - run: mvn test
