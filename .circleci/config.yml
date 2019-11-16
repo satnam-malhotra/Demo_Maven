@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-    
+
       - image: selenium/standalone-chrome:3.1.0
 
     working_directory: ~/repo
@@ -19,7 +19,6 @@ jobs:
             - v1-dependencies-{{ checksum "pom.xml" }}
             - v1-dependencies-
 
-      - run: mvn dependency:go-offline
 
       - save_cache:
           paths:
