@@ -4,7 +4,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="13.0.1+9"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/satnammalhotra/Downloads/DemoProject"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/satnammalhotra/Downloads/MavenDemo/Demo_Maven"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/satnammalhotra/Downloads/DemoProject"/>
+    <property name="user.dir" value="/Users/satnammalhotra/Downloads/MavenDemo/Demo_Maven"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="13.0.1+9"/>
     <property name="os.arch" value="x86_64"/>
@@ -22,7 +22,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/satnammalhotra/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2067744377711073415.tmp"/>
+    <property name="classworlds.conf" value="/Users/satnammalhotra/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf1438003875350886691.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/satnammalhotra/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="jdk.debug" value="release"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.version" value="13.0.1"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/satnammalhotra/Downloads/DemoProject/EMBEDDED"/>
+    <property name="maven.home" value="/Users/satnammalhotra/Downloads/MavenDemo/Demo_Maven/EMBEDDED"/>
     <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2019-10-15"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
