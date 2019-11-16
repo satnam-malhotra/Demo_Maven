@@ -9,5 +9,5 @@ workflows:
   maven_test:
     jobs:
       - maven/test
-    executor: my-executor
-    test_results_path: /path/to/test/results
+    	executor: my-executor
+    	test_results_path: /path/to/test/results
