@@ -23,6 +23,7 @@ public class AbstractChromeWebDriverTest {
 		//Create a instance of your web driver - chrome
 		driver = new ChromeDriver();
 		driver.get("http://www.gmail.com");
+		System.out.println("************ Executed successfully *****************");
 	}
 
 	@AfterTest
