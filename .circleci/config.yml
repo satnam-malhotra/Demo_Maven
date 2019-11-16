@@ -8,6 +8,6 @@ executors:
 workflows:
   maven_test:
     jobs:
-     - maven/test
+     - maven/test:
    	   executor: my-executor
        test_results_path: /path/to/test/results
