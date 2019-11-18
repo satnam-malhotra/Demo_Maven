@@ -31,37 +31,14 @@ jobs:
           working_directory: /
           command: |
             sudo apt-get -y -qq install awscli
+            
       - run:
           name: install git-lfs
           command: |
             curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
             sudo apt-get install git-lfs=1.1.1
             git lfs install
-
-      - run: npm install
-      - run: rm -rf bower_components/everfi-sdk
-      - run: ./node_modules/bower/bin/bower install
-
-      - save_cache:
-          paths:
-            - node_modules
-            - bower_components
-          key: v6-dependencies-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}-{{ checksum "bower.json" }}
-
-      - run:
-          command: npm test
-          environment:
-            PHANTOMJS_BIN: node_modules/.bin/phantomjs
-      - deploy:
-          name: deployment
-          command: |
-           if [ "${CIRCLE_BRANCH}" == "master" ] || [[ "${CIRCLE_BRANCH}" =~ release/.* ]] || [[ "${CIRCLE_BRANCH}" =~ hotfix/.* ]]; then
-             ./node_modules/gulp/bin/gulp.js deploy
-           elif [ "${CIRCLE_BRANCH}" == "develop" ]; then
-             ./node_modules/gulp/bin/gulp.js deploy-develop
-           elif [ "${CIRCLE_BRANCH}" == "split-fixes" ]; then
-             ./node_modules/gulp/bin/gulp.js deploy-custom --folder split_modules
-           fi
+            
       - run: sudo apt-get install maven
       - run: mvn test -f Demo_Maven/pom.xml
              
