@@ -38,13 +38,8 @@ jobs:
             sudo apt-get install git-lfs=1.1.1
             git lfs install
 
-      - restore_cache:
-          keys:
-          - v6-dependencies-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}-{{ checksum "bower.json" }}
-
       - run: npm install
       - run: rm -rf bower_components/everfi-sdk
-      - run: ./node_modules/bower/bin/bower cache clean everfi-sdk
       - run: ./node_modules/bower/bin/bower install
 
       - save_cache:
