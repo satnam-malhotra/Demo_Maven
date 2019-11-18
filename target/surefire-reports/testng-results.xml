@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-16T12:50:22Z" name="com.demo.project.AbstractChromeWebDriverTest" finished-at="2019-11-16T12:50:30Z" duration-ms="8696">
+  <suite name="com.demo.project.AbstractChromeWebDriverTest" duration-ms="6214" started-at="2019-11-18T06:49:35Z" finished-at="2019-11-18T06:49:41Z">
     <groups>
     </groups>
-    <test started-at="2019-11-16T12:50:22Z" name="Command line test" finished-at="2019-11-16T12:50:30Z" duration-ms="8696">
+    <test name="Command line test" duration-ms="6214" started-at="2019-11-18T06:49:35Z" finished-at="2019-11-18T06:49:41Z">
       <class name="com.demo.project.AbstractChromeWebDriverTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.demo.project.AbstractChromeWebDriverTest@26aa12dd]" started-at="2019-11-16T12:50:22Z" name="beforeTest" finished-at="2019-11-16T12:50:30Z" duration-ms="8496" status="PASS">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.demo.project.AbstractChromeWebDriverTest@38082d64]" name="beforeTest" is-config="true" duration-ms="6124" started-at="2019-11-18T06:49:35Z" finished-at="2019-11-18T06:49:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.demo.project.AbstractChromeWebDriverTest@26aa12dd]" started-at="2019-11-16T12:50:30Z" name="afterTest" finished-at="2019-11-16T12:50:30Z" duration-ms="179" status="PASS">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.demo.project.AbstractChromeWebDriverTest@38082d64]" name="afterTest" is-config="true" duration-ms="84" started-at="2019-11-18T06:49:41Z" finished-at="2019-11-18T06:49:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
