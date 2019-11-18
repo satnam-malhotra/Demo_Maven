@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: 'circleci/openjdk:8-jdk-browsers'
+      - image: 'image: circleci/node:6.13-browsers'
 
     working_directory: ~/repo
 
